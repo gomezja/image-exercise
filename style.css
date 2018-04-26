@@ -5,3 +5,22 @@
 .img {
     background-image: url("image/sample.jpg");
 }
+
+.round-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+
+    margin: 10px auto;
+}
