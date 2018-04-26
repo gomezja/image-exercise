@@ -1,0 +1,7 @@
+* {
+    margin: 0;
+}
+
+.img {
+    background-image: url("image/sample.jpg");
+}
