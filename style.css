@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
 .img {
     background-image: url("image/sample.jpg");
 }
@@ -35,4 +39,44 @@
     height: auto;
 
     margin: 10px auto;
+}
+
+.content {
+    margin: 8.33% 8.33%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.floater {
+    float: right;
+    display: block;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+
+    height: auto;
+    max-width: 300px;
+    margin: 0 0 0px 48px;
+}
+
+h1,
+.col-1 > p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 700px) {
+    .floater {
+        float: none;
+        
+        margin: 0 auto 24px;
+    }
 }
